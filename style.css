@@ -3,8 +3,17 @@ body {
   font-family: 'arial', sans-serif; 
   text-align: center;
 }
+header h1 {
+  margin-top: 20px;
+}
 header {
   background-color: #E4E8E4;
+}
+header img:hover {
+  opacity: 0.9;
+}
+header img {
+  height: 300px;
 }
 h1 {
   color: #23A1FF;
@@ -22,17 +31,29 @@ h2 {
 }
 h3 {
   background-color: #E4E8E4;
+  color: #23A1FF;
   border: 1px #808080;
   font-family: 'Oswald', sans-serif;
 }
-img {
-  height: 200px;
-  border-radius: 30%;
-  display: block;
-  margin: auto;
+article img {
+  height: 150px;
+  border-radius: 100%;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #23A1FF;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li:hover {
+  background-color: #E4E8E4;
 }
 nav ul li{  
-  font-size: 25px;
+  font-size: 20px;
   list-style-type: none;
   color: white;
   background-color: #23A1FF;
@@ -49,15 +70,31 @@ li {
 aside {
   float: right;
   width: 20%;
-  border: 1px solid black;
+  border: 1px solid #23A1FF;
   padding: 1px;
+  font-family: 'Oswald', sans-serif;
+  color: #23A1FF;
+  background-color: #E4E8E4;
 }
 section {
   width: 75%;
   float: left;
 }
+article p {
+  text-align: justify;
+}
 article {
   font-size: 14px;
+}
+footer a {
+  text-decoration: none;
+  color: #23A1FF;
+}
+footer {
+  background-color: #E4E8E4;
+  clear: both;
+  font-size: 20px;
+  color: #23A1FF;
 }
 .left {
   width: 45%;
@@ -67,8 +104,19 @@ article {
   width: 45%;
   float: right;
 }
-footer {
-  background-color: #E4E8E4;
-  clear: both;
+.filter {
+  background: 
+    radial-gradient(
+            rgba(228,232,228, 0.1),
+            rgba(228,232,228, 1)
+    ),
+    url(http://www.histoire-france.net/img/pages/revo/prise_de_bastille.jpg);
 }
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  background-color: white;
+  padding: 20px 50px;
+}
+
 
