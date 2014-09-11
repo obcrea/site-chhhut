@@ -118,5 +118,17 @@ footer {
   background-color: white;
   padding: 20px 50px;
 }
-
+@media (min-width:970px) {
+  .wrapper {
+    width: 960px; /*this will be applied everywhere*/
+  }
+@media (min-width:600px) and (max-width:979px) {  /*tablet*/
+  .wrapper {
+    width: 800px;
+  }
+}
+@media (min-width:960px) and (max-width:1599px) {  /*desktop*/
+  .wrapper {
+    width:1100px;
+  }
 
