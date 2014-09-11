@@ -1,40 +1,30 @@
-/* line 4, sass/style.scss */
+@import"setup";
+
+
 body {
   color: black;
-  font-family: 'arial', sans-serif;
+  font-family: 'arial', sans-serif; 
   text-align: center;
 }
-
-/* line 9, sass/style.scss */
 header h1 {
   margin-top: 20px;
 }
-
-/* line 12, sass/style.scss */
 header {
   background-color: #E4E8E4;
 }
-
-/* line 15, sass/style.scss */
 header img:hover {
   opacity: 0.9;
 }
-
-/* line 18, sass/style.scss */
 header img {
   height: 300px;
 }
-
-/* line 21, sass/style.scss */
 h1 {
-  color: #ff696b;
+  color: $red;
   font-size: 40px;
   text-align: center;
   font-family: 'Oswald', sans-serif;
   border: 2px solid white;
 }
-
-/* line 28, sass/style.scss */
 h2 {
   color: #23A1FF;
   font-size: 30px;
@@ -42,44 +32,30 @@ h2 {
   font-family: 'Oswald', sans-serif;
   border: 2px solid white;
 }
-
-/* line 35, sass/style.scss */
 h3 {
   background-color: #E4E8E4;
   color: #23A1FF;
   border: 1px #808080;
   font-family: 'Oswald', sans-serif;
 }
-
-/* line 41, sass/style.scss */
 article img {
   height: 150px;
   border-radius: 100%;
 }
-
-/* line 45, sass/style.scss */
 a:link {
   text-decoration: none;
 }
-
-/* line 48, sass/style.scss */
 a:hover {
   color: #23A1FF;
 }
-
-/* line 51, sass/style.scss */
 nav ul li a {
   text-decoration: none;
   color: white;
 }
-
-/* line 55, sass/style.scss */
 nav ul li:hover {
   background-color: #E4E8E4;
 }
-
-/* line 58, sass/style.scss */
-nav ul li {
+nav ul li{  
   font-size: 20px;
   list-style-type: none;
   color: white;
@@ -91,13 +67,9 @@ nav ul li {
   padding: 10px 50px;
   font-family: 'Oswald', sans-serif;
 }
-
-/* line 70, sass/style.scss */
 li {
-  display: inline;
+  display:inline;
 }
-
-/* line 73, sass/style.scss */
 aside {
   float: right;
   width: 20%;
@@ -107,80 +79,61 @@ aside {
   color: #23A1FF;
   background-color: #E4E8E4;
 }
-
-/* line 82, sass/style.scss */
 section {
   width: 75%;
   float: left;
 }
-
-/* line 86, sass/style.scss */
 article p {
   text-align: justify;
 }
-
-/* line 89, sass/style.scss */
 article {
   font-size: 14px;
 }
-
-/* line 92, sass/style.scss */
 footer a {
   text-decoration: none;
   color: #23A1FF;
 }
-
-/* line 96, sass/style.scss */
 footer {
   background-color: #E4E8E4;
   clear: both;
   font-size: 20px;
   color: #23A1FF;
 }
-
-/* line 102, sass/style.scss */
 .left {
   width: 45%;
   float: left;
 }
-
-/* line 106, sass/style.scss */
 .right {
   width: 45%;
   float: right;
 }
-
-/* line 110, sass/style.scss */
 .filter {
-  background: radial-gradient(rgba(228, 232, 228, 0.1), #e4e8e4), url(http://www.histoire-france.net/img/pages/revo/prise_de_bastille.jpg);
+  background: 
+    radial-gradient(
+            rgba(228,232,228, 0.1),
+            rgba(228,232,228, 1)
+    ),
+    url(http://www.histoire-france.net/img/pages/revo/prise_de_bastille.jpg);
 }
-
-/* line 118, sass/style.scss */
 .wrapper {
   width: 1100px;
   margin: auto;
   background-color: white;
   padding: 20px 50px;
 }
-
-@media (min-width: 970px) {
-  /* line 125, sass/style.scss */
+@media (min-width:970px) {
   .wrapper {
-    width: 960px;
-    /*this will be applied everywhere*/
+    width: 960px; /*this will be applied everywhere*/
   }
-}
-@media (min-width: 600px) and (max-width: 979px) {
-  /*tablet*/
-  /* line 130, sass/style.scss */
+ } 
+@media (min-width:600px) and (max-width:979px) {  /*tablet*/
   .wrapper {
     width: 800px;
   }
 }
-@media (min-width: 960px) and (max-width: 1599px) {
-  /*desktop*/
-  /* line 135, sass/style.scss */
+@media (min-width:960px) and (max-width:1599px) {  /*desktop*/
   .wrapper {
-    width: 1100px;
+    width:1100px;
   }
-}
+  }
+
